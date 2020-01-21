@@ -51,18 +51,24 @@ public class DemoChrome {
 		
 		
 		
-		  //now go to facebook page driver.get("https://www.facebook.com/");
+		  //now go to facebook page
+		driver.get("https://www.facebook.com/");
 		  
 		  //find element by id and fill the text box
-		  driver.findElement(By.id("email")).sendKeys("flora.toluhi@yahoo.com");
-		  
+		//  driver.findElement(By.id("email")).sendKeys("flora.toluhi@yahoo.com");
+	//	  driver.findElement(By.className("")).sendKeys("");
 		  //find element by name and fill the text box
-		  driver.findElement(By.name("pass")).sendKeys("jason123");
+		//  driver.findElement(By.name("pass")).sendKeys("jason123");
 		  
 		  //use of link text for forgot password. this can be used for any link on the
 		 // page with a tag
-		  driver.findElement(By.linkText("Forgotten account?")).click();
+	//	  driver.findElement(By.linkText("Forgotten account?")).click();
+		
+		//use the css selector for email
+		driver.findElement(By.cssSelector("#email")).sendKeys("mymail@yahoo.com");
 		 		
+		//use xpath for password
+		driver.findElement(By.xpath("//*[@id=\'pass\']")).sendKeys("mypass");
 		
 		
 	}
