@@ -64,9 +64,7 @@ public class DemoChrome {
 		  driver.findElement(By.linkText("Forgotten account?")).click();
 		 		
 		
-		//find element by class name. Note: SELENIUM will not accept spaces in between class name
-		//it throws error as COMPOUND CLASSES ARE NOT ACEPTED if there are spaces
-		//i decided to create another class for the salesforce page testing
+		
 	}
 
 }

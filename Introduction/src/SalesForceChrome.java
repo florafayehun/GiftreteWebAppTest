@@ -26,6 +26,17 @@ public class SalesForceChrome {
 				
 		//find element by class name. Note: SELENIUM will not accept spaces in between class name
 		//it throws error as COMPOUND CLASSES ARE NOT ACEPTED if there are spaces
+	driver.get("https://login.salesforce.com/");
+	driver.findElement(By.id("username")).sendKeys("Flora");
+	driver.findElement(By.name("pw")).sendKeys("123456");
+	
+	//an error is expected here because there are spaces in between the class name
+//	driver.findElement(By.className("button r4 wide primary")).click();
+	
+	//error message: no such element: Unable to locate element: {"method":"css selector","selector":".button\ r4\ wide\ primary"}
+	
+	//if there are more than 1 element with the same identifier like id, name etc, selenium uses the first element and ignores the rest element with same ID
+	//Selenium scans element from the TOP LEFT
 	
 	}
 
