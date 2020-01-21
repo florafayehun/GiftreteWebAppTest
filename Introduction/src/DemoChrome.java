@@ -1,5 +1,6 @@
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -35,20 +36,24 @@ public class DemoChrome {
 		
 		//it should then go to yahoo
 		driver.get("https://uk.yahoo.com");
-		System.out.println(driver.getTitle());
-		
-		//retrieve the current URL to know if we landed on the right browser and print on console
-		System.out.println(driver.getCurrentUrl());
-		
+	
 		//now to go back to google in selenium i.e. clicking the back button in automation
 		driver.navigate().back();
-		System.out.println(driver.getTitle());
-		
-		//retrieve the current URL to know if we landed on the right browser and print on console
-		System.out.println(driver.getCurrentUrl());
 		
 		//this will land on yahoo again
-		driver.navigate().forward();
+		//	driver.navigate().forward();
+		
+		//to close the current browser
+		//driver.close();
+		
+		//to close all browsers opened by selenium(all child windows)
+		//driver.quit();
+		
+		driver.get("https://www.facebook.com/");
+		driver.findElement(By.id("email")).sendKeys("flora.toluhi@yahoo.com");
+		driver.findElement(By.name("pass")).sendKeys("jason123");
+		//use of linktext for forgot password. this can be used for any link on the page with a tag
+		driver.findElement(By.linkText("Forgotten account?")).click();
 	}
 
 }
