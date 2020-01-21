@@ -50,9 +50,14 @@ public class DemoChrome {
 		//driver.quit();
 		
 		driver.get("https://www.facebook.com/");
+		
+		//find element by id and fill the text box
 		driver.findElement(By.id("email")).sendKeys("flora.toluhi@yahoo.com");
+		
+		//find element by name and fill the text box
 		driver.findElement(By.name("pass")).sendKeys("jason123");
-		//use of linktext for forgot password. this can be used for any link on the page with a tag
+		
+		//use of link text for forgot password. this can be used for any link on the page with a tag
 		driver.findElement(By.linkText("Forgotten account?")).click();
 	}
 
