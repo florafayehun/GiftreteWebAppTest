@@ -49,16 +49,24 @@ public class DemoChrome {
 		//to close all browsers opened by selenium(all child windows)
 		//driver.quit();
 		
-		driver.get("https://www.facebook.com/");
 		
-		//find element by id and fill the text box
-		driver.findElement(By.id("email")).sendKeys("flora.toluhi@yahoo.com");
 		
-		//find element by name and fill the text box
-		driver.findElement(By.name("pass")).sendKeys("jason123");
+		  //now go to facebook page driver.get("https://www.facebook.com/");
+		  
+		  //find element by id and fill the text box
+		  driver.findElement(By.id("email")).sendKeys("flora.toluhi@yahoo.com");
+		  
+		  //find element by name and fill the text box
+		  driver.findElement(By.name("pass")).sendKeys("jason123");
+		  
+		  //use of link text for forgot password. this can be used for any link on the
+		 // page with a tag
+		  driver.findElement(By.linkText("Forgotten account?")).click();
+		 		
 		
-		//use of link text for forgot password. this can be used for any link on the page with a tag
-		driver.findElement(By.linkText("Forgotten account?")).click();
+		//find element by class name. Note: SELENIUM will not accept spaces in between class name
+		//it throws error as COMPOUND CLASSES ARE NOT ACEPTED if there are spaces
+		//i decided to create another class for the salesforce page testing
 	}
 
 }
