@@ -68,7 +68,10 @@ public class DemoChrome {
 		driver.findElement(By.cssSelector("#email")).sendKeys("mymail@yahoo.com");
 		 		
 		//use xpath for password
+		//note when u see a long xpath very long and starting with html, do no COPY, It isnt reliable to use. Switch browser to get another one
+		//use chrome browser for xpath copy, it is more reliable
 		driver.findElement(By.xpath("//*[@id=\'pass\']")).sendKeys("mypass");
+		driver.findElement(By.xpath("//*[@id=\'login_form\']/table/tbody/tr[3]/td[2]/div/a")).click();
 		
 		
 	}
