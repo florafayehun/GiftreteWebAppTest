@@ -74,6 +74,17 @@ public class DemoChrome {
 		driver.findElement(By.xpath("//*[@id=\'login_form\']/table/tbody/tr[3]/td[2]/div/a")).click();
 		
 		
+		/*
+		 * To validate that an Xpath on the browser console is correct Paste the copied xpath inside $x(" ")
+		 * and press enter. There should be an output that points to the element which
+		 * will be generated. e.g.  $x("//*[@id='forgot_password_link']")
+		 * 
+		 * To validate that a css selector on the browser console is correct Paste the copied cssdelector
+		 * inside $(" ") and press enter. There should be an output that points to the
+		 * element which will be generated. e.g  $("//*[@id='forgot_password_link']")
+		 * 
+		 *
+		 */
 	}
 
 }
