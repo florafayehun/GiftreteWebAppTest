@@ -53,7 +53,10 @@ public class XpathGenfromHTML {
 		
 		
 		//GENERATING XPATH BY REGULAR EXPRESSION METHOD
-		//SYNTAX: tagname[@contains(@attribute.'value')]
+		//SYNTAX: //tagname[contains(@attribute,'value')]
+		//can be used for eng <input name="username12342">
+		//we can use just username for the value n ignore d numbers
+		// its //input[contains(@name,''username)]
 		
 		
 		
