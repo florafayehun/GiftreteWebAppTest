@@ -58,7 +58,7 @@ public class XpathGenfromHTML {
 		//we can use just username for the value n ignore d numbers
 		// its //input[contains(@name,''username)]
 		
-		
+		//generating CSS selecotr by regukar expression
 		
 		
 		
